@@ -24,11 +24,7 @@ app.use(gradeRouter);
 //define o dominio de origem para consumo do servico
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(
-  cors({
-    origin: process.env.CORS,
-  })
-);
+app.use(cors());
 
 app.get('/', (req, res) => {
   res.send('API em execucao');
