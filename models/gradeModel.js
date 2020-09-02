@@ -22,6 +22,7 @@ export default (mongoose) => {
     },
   });
 
+  //Comentário somente para testar nova branch feature/modeloMongoose
   const Grade = mongoose.model('grades', schema, 'grades');
 
   return Grade;
